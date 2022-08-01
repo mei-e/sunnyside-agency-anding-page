@@ -1,0 +1,140 @@
+.appear .transform {
+  -webkit-animation: go-right 2s ease;
+  animation: go-right 2s ease;
+}
+.appear .stand-out {
+  -webkit-animation: go-left 2s ease;
+  animation: go-left 2s ease;
+}
+.appear .description h2 {
+  -webkit-animation: go-down 1s ease;
+  animation: go-down 1s ease;
+}
+.appear .description p {
+  -webkit-animation: go-down 2s ease;
+  animation: go-down 2s ease;
+}
+.appear .description a {
+  -webkit-animation: go-down 2s ease;
+  animation: go-down 2s ease;
+}
+.appear .client img {
+  -webkit-animation: go-down 1s ease;
+  animation: go-down 1s ease;
+}
+.appear .client p {
+  -webkit-animation: go-up 2s ease;
+  animation: go-up 2s ease;
+}
+.appear .client h3 {
+  -webkit-animation: go-up 2s ease;
+  animation: go-up 2s ease;
+}
+
+@-webkit-keyframes go-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes go-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes go-right {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes go-right {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes go-up {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes go-up {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes go-down {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes go-down {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion) {
+  .appear .transform {
+    -webkit-animation: none;
+    animation: none;
+  }
+  .appear .stand-out {
+    -webkit-animation: none;
+    animation: none;
+  }
+  .appear .description h2 {
+    -webkit-animation: none;
+    animation: none;
+  }
+  .appear .description p {
+    -webkit-animation: none;
+    animation: none;
+  }
+  .appear .description a {
+    -webkit-animation: none;
+    animation: none;
+  }
+  .appear .client img {
+    -webkit-animation: none;
+    animation: none;
+  }
+  .appear .client p {
+    -webkit-animation: none;
+    animation: none;
+  }
+  .appear .client h3 {
+    -webkit-animation: none;
+    animation: none;
+  }
+}/*# sourceMappingURL=page-transition.css.map */

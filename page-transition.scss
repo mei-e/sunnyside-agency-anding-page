@@ -1,0 +1,120 @@
+.appear{
+    .transform{
+        -webkit-animation: go-right 2s ease;
+        animation: go-right 2s ease;
+    }
+    .stand-out{
+        -webkit-animation: go-left 2s ease;
+        animation: go-left 2s ease;
+    }
+    .description{
+        h2{
+            -webkit-animation: go-down 1s ease;
+            animation: go-down 1s ease;
+        }
+        p{
+            -webkit-animation: go-down 2s ease;
+            animation: go-down 2s ease;
+        }
+        a{
+            -webkit-animation: go-down 2s ease;
+            animation: go-down 2s ease;
+        }
+    }
+    .client{
+        img{
+            -webkit-animation: go-down 1s ease;
+            animation: go-down 1s ease;
+        }
+        p{
+            -webkit-animation: go-up 2s ease;
+            animation: go-up 2s ease;
+        }
+        h3{
+            -webkit-animation: go-up 2s ease;
+            animation: go-up 2s ease;
+        }
+    }
+}
+
+@keyframes go-left {
+    from {
+        opacity: 0;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes go-right {
+    from {
+        opacity: 0;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes go-up {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes go-down {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .appear{
+        .transform{
+            -webkit-animation: none;
+            animation: none;
+        }
+        .stand-out{
+            -webkit-animation: none;
+            animation: none;
+        }
+        .description{
+            h2{
+                -webkit-animation: none;
+                animation: none;
+            }
+            p{
+                -webkit-animation: none;
+                animation: none;
+            }
+            a{
+                -webkit-animation: none;
+                animation: none;
+            }
+        }
+        .client{
+            img{
+                -webkit-animation: none;
+                animation: none;
+            }
+            p{
+                -webkit-animation: none;
+                animation: none;
+            }
+            h3{
+                -webkit-animation: none;
+                animation: none;
+            }
+        }
+    }
+}
